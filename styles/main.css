@@ -1,0 +1,13 @@
+:root {
+ --color-primary: #a740a8;
+ --color-primary-darker: #742d75;
+ --color-primary-lighter: #b67cb7;
+ --color-page-bg: #e5e5e5;
+ --color-normal-text: #222222;
+ --color-4cadia-bg: #071d49;
+}
+
+body {
+  font-family: 'Noto Sans', sans-serif;
+  background: var(--color-page-bg);
+}
