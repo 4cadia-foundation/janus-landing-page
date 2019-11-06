@@ -1,13 +1,78 @@
 :root {
- --color-primary: #a740a8;
- --color-primary-darker: #742d75;
- --color-primary-lighter: #b67cb7;
- --color-page-bg: #e5e5e5;
- --color-normal-text: #222222;
- --color-4cadia-bg: #071d49;
+  --color-primary: #a740a8;
+  --color-primary-darker: #742d75;
+  --color-primary-lighter: #b67cb7;
+  --color-page-bg: #e5e5e5;
+  --color-normal-text: #222222;
+  --color-4cadia-bg: #071d49;
+  --color-text-negative: #fff;
+  --hero-title-size: 3rem;
+  --hero-subtitle-size: 1.75rem;
 }
 
 body {
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   background: var(--color-page-bg);
+}
+
+.u-responsive-img {
+  display: block;
+  width: 100%;
+  max-height: 100%;
+}
+
+.u-vertical-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+._4cadia-nav {
+  background: var(--color-4cadia-bg);
+  display: flex;
+  padding: 1rem;
+}
+
+._4cadia-nav__logo-wrapper {
+  flex: 0 0 auto;
+  height: 1.5rem;
+}
+
+.hero {
+  background-image: radial-gradient(
+      61.8% 136.15% at -15.44% -14.39%,
+      rgba(255, 255, 255, 0.15) 0%,
+      rgba(255, 255, 255, 0.03) 99.14%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    linear-gradient(137.65deg, #742d75 12.76%, #421942 45.09%, #260726 114.6%);
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  padding: 5rem;
+}
+
+.hero__item--spacer {
+  flex: 5rem 0 1;
+}
+
+.hero__slogan {
+  color: var(--color-text-negative);
+  text-align: center;
+}
+
+.hero__slogan > .hero__title {
+  font-size: var(--hero-title-size);
+  margin-bottom: calc(var(--hero-title-size) / 3);
+}
+
+.hero__slogan > .hero__subtitle {
+  font-size: var(--hero-subtitle-size);
+  margin-top: 0;
+  letter-spacing: 0.05rem;
+}
+
+.hero__avatar {
+  position: relative;
+  top: -0.75rem;
 }
