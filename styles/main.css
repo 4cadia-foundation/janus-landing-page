@@ -17,7 +17,7 @@
 }
 
 /* Large devices (desktops, less than 1200px) */
-@media (max-width: 1199.98px) {
+@media (max-width: 1200px) {
   :root {
     --font-size-hero-title: 2.4rem;
     --font-size-hero-subtitle: 1.4rem;
@@ -28,7 +28,7 @@
 }
 
 /* Small devices (landscape phones, less than 768px) */
-@media (max-width: 767.98px) {
+@media (max-width: 768px) {
   :root {
     --font-size-hero-title: 1.52rem;
     --font-size-hero-subtitle: 0.85rem;
@@ -207,7 +207,7 @@ p + p {
 }
 
 /* Small devices (landscape phones, less than 768px) */
-@media (max-width: 767.98px) {
+@media (max-width: 768px) {
   .social-links__item {
     margin-right: 0.75rem;
     max-width: 2rem;
@@ -215,7 +215,7 @@ p + p {
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) {
+@media (max-width: 576px) {
   .social-links__item {
     margin-right: 1rem;
     max-width: 2.5rem;
@@ -225,6 +225,7 @@ p + p {
 .page-header {
   position: relative;
   overflow: hidden;
+  z-index: 1;
 }
 
 .v-cut {
@@ -276,7 +277,7 @@ p + p {
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) {
+@media (max-width: 576px) {
   .hero {
     flex-direction: column;
     justify-content: flex-start;
@@ -303,10 +304,12 @@ p + p {
   padding: 0 5rem;
   max-width: 73.75rem;
   margin: 0 auto;
+  position: relative;
+  z-index: 10;
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) {
+@media (max-width: 576px) {
   .page-content {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
@@ -365,7 +368,7 @@ p + p {
 }
 
 /* Small devices (landscape phones, less than 768px) */
-@media (max-width: 767.98px) {
+@media (max-width: 768px) {
   .content-section__title {
     text-align: center;
   }
@@ -459,14 +462,18 @@ p + p {
 }
 
 /* Small devices (landscape phones, less than 768px) */
-@media (max-width: 767.98px) {
+@media (max-width: 768px) {
   .card-list {
     flex-direction: column;
   }
 
   .card {
     flex: auto 0 0;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .card.card--horizontal {
+    margin-bottom: 2rem;
   }
 }
 
