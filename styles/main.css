@@ -292,7 +292,7 @@ p + p {
 
   .hero__item.janus-avatar {
     order: 0;
-    max-height: 10rem;
+    max-height: 30vw;
   }
 
   .hero__item.janus-text {
