@@ -25,7 +25,10 @@
     <div class="page">
       <header class="page-header">
         <nav class="_4cadia-nav">
-          <a class="_4cadia-nav__logo-wrapper" href="//4cadia.com">
+          <a
+            class="_4cadia-nav__item _4cadia-nav__logo-wrapper"
+            href="//4cadia.com"
+          >
             <img
               alt="4cadia"
               src="images/4cadia-logo.svg"
@@ -34,12 +37,14 @@
           </a>
         </nav>
         <div class="hero">
-          <div class="hero__item u-vertical-center">
-            <img
-              alt="Janus"
-              class="u-responsive-img hero__text-logo"
-              src="images/janus-text-logo.svg"
-            />
+          <div class="janus-text hero__item u-vertical-center">
+            <div class="hero__text-logo">
+              <img
+                alt="Janus"
+                class="u-responsive-img"
+                src="images/janus-text-logo.svg"
+              />
+            </div>
             <hgroup class="hero__slogan">
               <h1 class="hero__title">The Gateway to the Crypto Universe</h1>
               <h2 class="hero__subtitle">
@@ -48,14 +53,15 @@
             </hgroup>
           </div>
           <div class="hero__item hero__item--spacer"></div>
-          <div class="hero__item">
+          <div class="janus-avatar hero__item">
             <img
               alt="Janus Logo"
-              class="u-responsive-img  hero__avatar"
+              class="u-responsive-img hero__avatar"
               src="images/janus-avatar.svg"
             />
           </div>
         </div>
+        <div class="v-cut"></div>
       </header>
       <main class="page-content">
         <section
@@ -85,28 +91,46 @@
           </aside>
         </section>
 
-        <section class="features content-section ">
+        <section class="features content-section u-text-center">
           <h1 class="content-section__title">Features</h1>
-          <ul>
-            <li>
-              <img src="./images/features-indexer.svg" alt="Indexer" />
-              <h2 class="content-section__subtitle">Indexer</h2>
-              <p>
+          <ul class="card-list card-list--horizontal u-unstyled-list">
+            <li class="card">
+              <div class="card__img card__img--smaller">
+                <img
+                  src="./images/features-indexer.svg"
+                  alt="Indexer"
+                  class="u-responsive-img"
+                />
+              </div>
+              <h2 class="card__title content-section__subtitle">Indexer</h2>
+              <p class="card__content">
                 Make your own content available in the Web 3.0. Help us make
                 internet great again.
               </p>
             </li>
-            <li>
-              <img src="./images/features-search.svg" alt="Search" />
-              <h2 class="content-section__subtitle">Search</h2>
+            <li class="card card--inverted">
+              <div class="card__img card__img--smaller">
+                <img
+                  src="./images/features-search.svg"
+                  alt="Search"
+                  class="u-responsive-img"
+                />
+              </div>
+              <h2 class="card__title content-section__subtitle">Search</h2>
               <p>
                 Find content in the Web 3.0. Discover a new world of
                 possibilities.
               </p>
             </li>
-            <li>
-              <img src="./images/features-p2p-ads.svg" alt="P2P Ads" />
-              <h2 class="content-section__subtitle">P2P Ads</h2>
+            <li class="card">
+              <div class="card__img card__img--smaller">
+                <img
+                  src="./images/features-p2p-ads.svg"
+                  alt="P2P Ads"
+                  class="u-responsive-img"
+                />
+              </div>
+              <h2 class="card__title content-section__subtitle">P2P Ads</h2>
               <p>
                 Opt-in to receive cryptocurrency for your attention. Only from
                 advertisers you choose.
@@ -116,13 +140,19 @@
         </section>
 
         <section class="how-it-works content-section">
-          <h1 class="content-section__title">How it Works</h1>
-          <ul>
-            <li>
-              <img src="./images/how-it-works-indexer.svg" alt="Indexer" />
-              <div>
-                <h2 class="content-section__subtitle">Indexer</h2>
-                <p>
+          <h1 class="content-section__title u-text-center">How it Works</h1>
+          <ul class="u-unstyled-list card-list card-list--vertical">
+            <li class="card card--horizontal">
+              <div class="card__img">
+                <img
+                  src="./images/how-it-works-indexer.svg"
+                  alt="Indexer"
+                  class="u-responsive-img"
+                />
+              </div>
+              <div class="card__content-wrapper">
+                <h2 class="card__title content-section__subtitle">Indexer</h2>
+                <p class="card__content">
                   Allows users to upload content to a decentralized storage,
                   such as IPFS, Storj or Swarm. Once the content is uploaded, it
                   will be indexed by Janus Smart Contract, currently implemented
@@ -132,11 +162,17 @@
                 </p>
               </div>
             </li>
-            <li>
-              <img src="./images/how-it-works-search.svg" alt="Search" />
-              <div>
-                <h2 class="content-section__subtitle">Search</h2>
-                <p>
+            <li class="card card--horizontal">
+              <div class="card__img">
+                <img
+                  src="./images/how-it-works-search.svg"
+                  alt="Search"
+                  class="u-responsive-img"
+                />
+              </div>
+              <div class="card__content-wrapper">
+                <h2 class="card__title content-section__subtitle">Search</h2>
+                <p class="card__content">
                   Discover what the Web 3.0 has to offer. Leveraging
                   user-curation , you get much more precise search results and
                   can earn cryptocurrency to assess the quality of results for
@@ -145,11 +181,17 @@
                 </p>
               </div>
             </li>
-            <li>
-              <img src="./images/how-it-works-p2p-ads.svg" alt="P2P Ads" />
-              <div>
-                <h2 class="content-section__subtitle">P2P Ads</h2>
-                <p>
+            <li class="card card--horizontal">
+              <div class="card__img">
+                <img
+                  src="./images/how-it-works-p2p-ads.svg"
+                  alt="P2P Ads"
+                  class="u-responsive-img"
+                />
+              </div>
+              <div class="card__content-wrapper">
+                <h2 class="card__title content-section__subtitle">P2P Ads</h2>
+                <p class="card__content">
                   Advertisers wll be able to pay users for their attention
                   directly using cryptocurrency. Users willl be free to choose
                   when and what kind of ads they want to see. No more
@@ -166,16 +208,19 @@
         >
           <main class="side-by-side__content">
             <h1 class="content-section__title">
-              See what Janus team is doing right now!
+              See what Janus team is doing!
             </h1>
             <p>
               Janus is a open source project and you can contribute with our
-              application!.
+              application!
             </p>
-            <p>Visit our Github for more information</p>
+            <p class="u-margin-bottom">
+              Visit our Github for more information.
+            </p>
             <a
               class="btn btn--primary btn--cta btn--with-icon"
-              href="https://github.com/4cadia-foundation/jns"
+              href="https://github.com/4cadia-foundation/janus"
+              target="_blank"
             >
               <img
                 src="images/github.svg"
@@ -199,7 +244,7 @@
           class="stay-up-to-date content-section side-by-side side-by-side--content-left"
         >
           <main class="side-by-side__content">
-            <p class="text--cta">
+            <p class="text--cta u-margin-bottom">
               Stay up to date and
               <em class="u-text-emphasis">change the world</em> with us.
             </p>
@@ -219,42 +264,86 @@
                 placeholder="E-mail"
                 aria-labelled-by="email-label"
               />
-              <button type="submit" class="form__submit btn btn--primary">Subscribe</button>
+              <button type="submit" class="form__submit btn btn--primary">
+                Subscribe
+              </button>
             </form>
           </main>
           <div class="side-by-side__spacer"></div>
           <aside class="side-by-side__illustration">
-            <img src="images/stay-up-to-date.svg" class="u-responsive-img" alt="Stay up to date" />
+            <img
+              src="images/stay-up-to-date.svg"
+              class="u-responsive-img"
+              alt="Stay up to date"
+            />
           </aside>
         </section>
       </main>
       <footer class="page-footer">
-        <a href="//4cadia.com">
-          <img alt="4cadia" src="images/4cadia-logo.svg" />
-        </a>
-        <section class="white-paper">
-          <h3>Developers</h3>
-          <a href="#">White Paper</a>
-        </section>
-        <section class="community">
-          <h3>Community</h3>
-          <ul>
-            <li>
-              <a href="#"><img src="images/twitter.svg" alt="Twitter"/></a>
-            </li>
-            <li>
-              <a href="#"><img src="images/medium.svg" alt="Medium"/></a>
-            </li>
-            <li>
-              <a href="#"><img src="images/linkedin.svg" alt="LinkedIn"/></a>
-            </li>
-            <li>
-              <a href="https://github.com/4cadia-foundation"
-                ><img src="images/github.svg" alt="Github"
-              /></a>
-            </li>
-          </ul>
-        </section>
+        <div class="_4cadia-nav _4cadia-nav--taller">
+          <div
+            class="_4cadia-nav__item _4cadia-nav__item--vertical-center _4cadia-nav__item--responsive"
+          >
+            <a class="_4cadia-nav__logo-wrapper" href="//4cadia.com">
+              <img
+                alt="4cadia"
+                src="images/4cadia-logo.svg"
+                class="u-responsive-img"
+              />
+            </a>
+          </div>
+          <section
+            class="_4cadia-nav__item _4cadia-nav__item--pull-right white-paper u-text-center"
+          >
+            <h3 class="_4cadia-nav__section-title">Developers</h3>
+            <a href="#" class="_4cadia-nav__link--cta">White Paper</a>
+          </section>
+          <section
+            class="_4cadia-nav__item _4cadia-nav__item--pull-right community u-text-center"
+          >
+            <h3 class="_4cadia-nav__section-title">Community</h3>
+            <ul class="u-unstyled-list social-links">
+              <li class="social-links__item">
+                <a href="https://twitter.com/4cadia" target="_blank">
+                  <img
+                    src="images/twitter.svg"
+                    alt="Twitter"
+                    class="u-responsive-img"
+                  />
+                </a>
+              </li>
+              <li class="social-links__item">
+                <a href="https://medium.com/@4cadia" target="_blank">
+                  <img
+                    src="images/medium.svg"
+                    alt="Medium"
+                    class="u-responsive-img"
+                  />
+                </a>
+              </li>
+              <li class="social-links__item">
+                <a
+                  href="https://www.linkedin.com/company/4cad1a/"
+                  target="_blank"
+                >
+                  <img
+                    src="images/linkedin.svg"
+                    alt="LinkedIn"
+                    class="u-responsive-img"
+                  />
+                </a>
+              </li>
+              <li class="social-links__item">
+                <a href="https://github.com/4cadia-foundation"
+                  ><img
+                    src="images/github.svg"
+                    alt="Github"
+                    class="u-responsive-img"
+                /></a>
+              </li>
+            </ul>
+          </section>
+        </div>
       </footer>
     </div>
   </body>
