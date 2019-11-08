@@ -64,8 +64,9 @@ p + p {
 
 .u-responsive-img {
   display: block;
-  width: 100%;
+  max-width: 100%;
   max-height: 100%;
+  margin: auto;
 }
 
 .u-vertical-center {
@@ -147,7 +148,7 @@ p + p {
   background: var(--color-4cadia-bg);
   color: var(--color-text-negative);
   display: flex;
-  padding: 1rem;
+  padding: 1rem 2rem;
 }
 
 ._4cadia-nav--taller {
@@ -164,12 +165,12 @@ p + p {
   margin-right: 3rem;
 }
 
-._4cadia-nav__item--vertical-center {
-  align-self: center;
-}
-
 ._4cadia-nav__item:last-child {
   margin-right: 0;
+}
+
+._4cadia-nav__item--vertical-center {
+  align-self: center;
 }
 
 ._4cadia-nav__item._4cadia-nav__item--responsive {
@@ -185,6 +186,9 @@ p + p {
 
 ._4cadia-nav__logo-wrapper {
   display: inline-block;
+}
+
+._4cadia-nav__logo-wrapper--smaller {
   height: 1.5rem;
 }
 
@@ -195,6 +199,10 @@ p + p {
 .social-links {
   display: flex;
   justify-content: center;
+}
+
+.social-links a {
+  display: block;
 }
 
 .social-links__item {
@@ -378,7 +386,7 @@ p + p {
 
 .card.card--horizontal > .card__img {
   flex: 10rem 0 1;
-  margin: 0 1rem 0 0;
+  margin: 0 2rem 0 0;
 }
 
 .card.card--horizontal .card__title {
@@ -403,6 +411,10 @@ p + p {
   border-radius: 0.25rem;
   padding: 0.5rem;
   padding: 0.5rem 1rem;
+}
+
+.form__input:focus {
+  border-color: var(--color-primary-lighter);
 }
 
 .form__submit {
@@ -475,7 +487,7 @@ p + p {
 
   .hero__item.janus-avatar {
     order: 0;
-    max-height: 30vw;
+    height: 30vw;
   }
 
   .hero__item.janus-text {
@@ -497,7 +509,8 @@ p + p {
 
   .card.card--horizontal > .card__img {
     max-height: 8rem;
-    margin-bottom: 1rem;
+    max-width: 8rem;
+    margin: 0 auto 1rem;
   }
 
   .card.card--horizontal .card__title {
@@ -507,5 +520,18 @@ p + p {
   .social-links__item {
     margin-right: 1rem;
     max-width: 2.5rem;
+  }
+
+  .page-footer > ._4cadia-nav {
+    flex-direction: column;
+  }
+
+  .page-footer ._4cadia-nav__item {
+    flex: auto 0 0;
+    margin: 0 0 2rem;
+  }
+
+  .page-footer ._4cadia-nav__item:last-child {
+    margin-bottom: 0;
   }
 }
