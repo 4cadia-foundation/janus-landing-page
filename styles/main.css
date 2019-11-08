@@ -206,22 +206,6 @@ p + p {
   margin-right: 0;
 }
 
-/* Small devices (landscape phones, less than 768px) */
-@media (max-width: 768px) {
-  .social-links__item {
-    margin-right: 0.75rem;
-    max-width: 2rem;
-  }
-}
-
-/* Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 576px) {
-  .social-links__item {
-    margin-right: 1rem;
-    max-width: 2.5rem;
-  }
-}
-
 .page-header {
   position: relative;
   overflow: hidden;
@@ -276,44 +260,12 @@ p + p {
   top: -0.75rem;
 }
 
-/* Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 576px) {
-  .hero {
-    flex-direction: column;
-    justify-content: flex-start;
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
-  }
-
-  .hero__item--spacer {
-    flex: 0 0 0;
-    order: 2;
-  }
-
-  .hero__item.janus-avatar {
-    order: 0;
-    max-height: 30vw;
-  }
-
-  .hero__item.janus-text {
-    order: 1;
-  }
-}
-
 .page-content {
   padding: 0 5rem;
   max-width: 73.75rem;
   margin: 0 auto;
   position: relative;
   z-index: 10;
-}
-
-/* Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 576px) {
-  .page-content {
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
-  }
 }
 
 .content-section {
@@ -365,34 +317,6 @@ p + p {
 
 .side-by-side--content-right > .side-by-side__illustration {
   order: 0;
-}
-
-/* Small devices (landscape phones, less than 768px) */
-@media (max-width: 768px) {
-  .content-section__title {
-    text-align: center;
-  }
-
-  .side-by-side {
-    flex-direction: column;
-  }
-
-  .side-by-side__illustration,
-  .side-by-side__content {
-    flex: auto 0 0;
-  }
-
-  .side-by-side__illustration {
-    margin-top: 2rem;
-  }
-
-  .side-by-side--content-right > .side-by-side__illustration {
-    margin-bottom: 2rem;
-  }
-
-  .side-by-side__spacer {
-    flex: 0 0 0;
-  }
 }
 
 .card-list {
@@ -448,6 +372,10 @@ p + p {
   margin-bottom: 1rem;
 }
 
+.card.card--horizontal:last-child {
+  margin-bottom: 0;
+}
+
 .card.card--horizontal > .card__img {
   flex: 10rem 0 1;
   margin: 0 1rem 0 0;
@@ -458,23 +386,7 @@ p + p {
 }
 
 .card.card--horizontal > .card__content-wrapper {
-  flex: 80rem 1 2;
-}
-
-/* Small devices (landscape phones, less than 768px) */
-@media (max-width: 768px) {
-  .card-list {
-    flex-direction: column;
-  }
-
-  .card {
-    flex: auto 0 0;
-    margin-bottom: 2rem;
-  }
-
-  .card.card--horizontal {
-    margin-bottom: 2rem;
-  }
+  flex: 80rem 1 1.5;
 }
 
 .inline-form {
@@ -495,4 +407,105 @@ p + p {
 
 .form__submit {
   flex: 8rem 0 1;
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 768px) {
+  .content-section__title {
+    text-align: center;
+  }
+
+  .side-by-side {
+    flex-direction: column;
+  }
+
+  .side-by-side__illustration,
+  .side-by-side__content {
+    flex: auto 0 0;
+  }
+
+  .side-by-side__illustration {
+    margin-top: 2rem;
+  }
+
+  .side-by-side--content-right > .side-by-side__illustration {
+    margin-bottom: 2rem;
+  }
+
+  .side-by-side__spacer {
+    flex: 0 0 0;
+  }
+
+  .card-list {
+    flex-direction: column;
+  }
+
+  .card {
+    flex: auto 0 0;
+    margin-bottom: 2rem;
+  }
+
+  .card:last-child {
+    margin-bottom: 0;
+  }
+
+  .github-cta-wrapper {
+    text-align: center;
+  }
+
+  .social-links__item {
+    margin-right: 0.75rem;
+    max-width: 2rem;
+  }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 576px) {
+  .hero {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .hero__item--spacer {
+    flex: 0 0 0;
+    order: 2;
+  }
+
+  .hero__item.janus-avatar {
+    order: 0;
+    max-height: 30vw;
+  }
+
+  .hero__item.janus-text {
+    order: 1;
+  }
+
+  .page-content {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .card.card--horizontal {
+    flex-direction: column;
+  }
+
+  .card.card--horizontal > .card__content-wrapper {
+    flex: auto 0 0;
+  }
+
+  .card.card--horizontal > .card__img {
+    max-height: 8rem;
+    margin-bottom: 1rem;
+  }
+
+  .card.card--horizontal .card__title {
+    text-align: center;
+  }
+
+  .social-links__item {
+    margin-right: 1rem;
+    max-width: 2.5rem;
+  }
 }
